@@ -52,7 +52,7 @@ class MatchFragment : LifecycleFragment(), Injectable {
         // get matches exposes live data, now view must observe it
         matchViewModel.getMatches().observe(this, Observer<Resource<List<Matches>>> {
             if (it != null && it.data != null) {
-                (matchRV.adapter as MatchAdapter).updateItems(it.data!!)
+                (matchRV.adapter as MatchAdapter).updateItems(it.data)
             }
         })
     }

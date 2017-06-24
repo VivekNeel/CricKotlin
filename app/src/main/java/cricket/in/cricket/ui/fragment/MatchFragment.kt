@@ -58,7 +58,8 @@ class MatchFragment : LifecycleFragment(), Injectable {
     }
 
     private fun initAdapter() {
-        if (matchRV.adapter == null) {
+        if (matchRV.adapter == null
+                ) {
             matchRV.adapter = MatchAdapter()
         }
     }
